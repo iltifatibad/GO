@@ -11,4 +11,17 @@ func main() {
 
 	fmt.Println(*(&a)) // ----> 5
 
+	// ANOTHER EXAMPLE ABOUT SHARING DATA
+
+	x := 10
+	y := x
+
+	fmt.Println(x, y) // -----> 10 , 10
+
+	// -----
+
+	x = 5
+	y = *&x
+
+	fmt.Println(x, y)
 }
